@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ABSHIVINCHI | Explore My Portfolio</title>
+    <style>
+      /* Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  width: 100%;
+  height: 100%;
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Header */
+header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px; /* Adjust the max width as per your design */
+  padding: 1em;
+}
+#top_logo{
+  width: 450px;
+}
+
+/* Navigation Menu */
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li {
+  padding: 0.5rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+/* Hero Section */
+main {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+#Abshir_Photo{
+  width: 768px;
+  height: 768px;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1200px; /* Adjust as needed */
+  width: 100%;
+  padding: 2em;
+}
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px; /* Adjust as needed */
+  width: 100%;
+}
+/* Footer */
+footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 1em;
+}
+
+#Logo_2{
+  width: 200px;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px; /* Adjust as needed */
+  width: 100%;
+}
+
+.social-links {
+  display: flex;
+  gap: 20px;
+  padding-top: 1em;
+}
+
+.social-links a img {
+  width: 24px; /* Adjust as needed */
+  height: auto;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .navbar, .footer-content {
+      flex-direction: column;
+  }
+
+  nav ul {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .social-links {
+      justify-content: center;
+  }
+}
+    </style>
+  </head>
+  <body>
+    <header>
+        <div class="navbar">
+            <img id='top_logo' src="./static/Logo.png" alt="ABSHIVINCHI Logo" class="logo" />
+            <nav>
+          <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="Portfolio">Portfolio</a></li>
+            <li><a href="About">About Me</a></li>
+            <li><a href="Contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+ 
+    <main>
+      <section class="hero" id="home">
+        <img id= 'Abshir_Photo' src="./static/Me.jpg" alt="Your Photo" class="hero-image" />
+        <div class="hero-content">
+          <h1>About Me</h1>
+          <p>
+            With over 5 years of experience in design, UX/UI, and front-end
+            development, I am passionate about creating visually stunning and
+            user-friendly websites. My expertise lies in translating complex
+            ideas into intuitive designs that enhance the user experience. I
+            have a proven track record of delivering exceptional results and
+            exceeding client expectations. Let's collaborate and bring your
+            vision to life!
+          </p>
+          <a href="./static/Abshir_Resume.pdf" class="btn-download">Download Resume</a>
+        </div>
+      </section>
+    </main>
+ 
+    <footer>
+      <div class="footer-content">
+          <img id= "Logo_2" src="./static/Logo.png" alt="ABSHIVINCHI Logo" class="footer-logo" />
+          <nav>
+          <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="Portfolio">Portfolio</a></li>
+            <li><a href="About">About Me</a></li>
+            <li><a href="Contact">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="social-links">
+          <a href="your-facebook-url"
+            ><img src="./static/Facebook.png" alt="Facebook"
+          /></a>
+          <a href="your-instagram-url"
+            ><img src="./static/Instagram.png" alt="Instagram"
+          /></a>
+          <a href="your-twitter-url"
+            ><img src="./static/X.png" alt="Twitter"
+          /></a>
+          <a href="your-linkedin-url"
+            ><img src="./static/Linkedin.png" alt="LinkedIn"
+          /></a>
+          <a href="your-youtube-url"
+            ><img src="./static/Youtube.png" alt="YouTube"
+          /></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
